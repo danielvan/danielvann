@@ -76,11 +76,13 @@
 		<div class="site_header">
 
 			<div class="header_text">
-				<a href="{{ site.direct_link }}" {{#if_any route.search route.is_set}}{{else}}rel="show_index"{{/if_any}}>
-					{{{ site.header_text }}}
-<!-- 					Recent work includes the Beats Music platform & campaign,  service design for O2 Priority, styleguides for Getty Images, retail systems for Nokia and other clients such as Nike, Beats by Dre, Google, Heineken, Coke, Sure and Unilever, among others. 
-And I don’t mind if you call me Dan Van. -->
-				</a>
+	<!-- 			<a href="{{ site.direct_link }}" {{#if_any route.search route.is_set}}{{else}}rel="show_index"{{/if_any}}> -->
+<!-- 					{{{ site.header_text }}}
+ -->
+ 				<h1> Daniel Nieuwenhuizen <h1>
+ 				<h3> Award-winning design & Art director, currently at R/GA london </h3>
+				<h2>Recent work includes the Beats Music platform & campaign,  service design for O2 Priority, styleguides for Getty Images, retail systems for Nokia and other clients such as Nike, Beats by Dre, Google, Heineken, Coke, Sure and Unilever, among others.</h2>
+<!-- 				</a> -->
 			</div>
 
 	  {{#if_option "show_sets"}}
@@ -95,10 +97,12 @@ And I don’t mind if you call me Dan Van. -->
 	  </div>
 	  {{/if_option}}
 
-			{{#if site.filter}}
-				<div class="filter">Filter: {{ site.filter }}</b> <a class="view_all" href="{{ site.direct_link }}">view all</a></div>
+		<!-- 	{{#if site.filter}}
+				<div class="filter">
+					Filter: {{ site.filter }}</b> <a class="view_all" href="{{ site.direct_link }}">view all</a>
+				</div>
 			{{/if}}
-
+ -->
 		</div>
 
 {{#route index "/"}}
@@ -114,8 +118,8 @@ And I don’t mind if you call me Dan Van. -->
 		  {{#if_option "next_link_in_project"}}
 			<a href="#" class="next" rel="next_project">Next</a>
 		  {{/if_option}}
-
-<!-- 		  {{#if_option "index_link_in_project"}}
+<!-- 
+		  {{#if_option "index_link_in_project"}}
 			<a href="#" class="show_index_icon" rel="show_index">✕</a> <a href="#" class="index" rel="show_index">Index</a>
 		  {{/if_option}} -->
 		</div>
@@ -125,30 +129,30 @@ And I don’t mind if you call me Dan Van. -->
 		  <div class="project_media" data-resize-parent data-elementresizer></div>
 
 					<div class="project_content">
-						{{#if_option "title_in_project"}}
+						<!-- {{#if_option "title_in_project"}}
 						  {{#if project.show_title}}
 							<div class="project_title">
 							  {{{ project.title }}}
 							</div>
 						  {{/if}}
-						{{/if_option}}
+						{{/if_option}} -->
 
 						{{print "project.content"}}
 
 						<div class="project_footer">
 
-						  {{#if project.date}}
+						<!--   {{#if project.date}}
 							<span class="date">
 							  {{ project.date }}
 							</span>
-						  {{/if}}
+						  {{/if}} -->
 
-						  {{#if project.tags}}
+					<!-- 	  {{#if project.tags}}
 							<span class="tags">
 							  Filed under
 							  {{#project.tags}}<span><a href="{{ filter_link }}">{{ tag }}</a></span>{{/project.tags}}
 							</span>
-						  {{/if}}
+						  {{/if}} -->
 
 						  {{#if_option "view_count_in_project"}}
 							<span class="views">({{ project.views }} views)</span>

@@ -4,7 +4,7 @@
 		"class": "main_options input",
 		"available": true,
 		"value": {
-			"w": "250",
+			"w": "308",
 			"h": "*"
 		},
 		"allowed": [
@@ -119,7 +119,7 @@
 		"id": "title_in_thumb",
 		"class": "main_options check",
 		"available": true,
-		"value": true,
+		"value": false,
 		"segments": [
 			{
 				"type": "boolean"
