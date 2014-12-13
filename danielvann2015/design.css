@@ -67,7 +67,6 @@ body.phone .site_header {
  */
 
 .header_image {
-	margin: auto;
 }
 
 .header_image img {
@@ -297,7 +296,7 @@ body.phone .project {
 	font-family: sans-serif;
 	font-size: 14px;
 	width: 300px;
-	padding: 26px 0 0 40px;
+	padding: 60px 0;
 	position: fixed;
 	top: 0;
 	z-index: 999;
